@@ -1,0 +1,48 @@
+﻿<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="wwwroot/css/modeler.css" asp-append-version="true" />
+  <link rel="stylesheet" href="wwwroot/lib/bpmn-js/dist/assets/diagram-js.css">
+  <link rel="stylesheet"
+    href="wwwroot/lib/bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css">
+  <link rel="stylesheet"
+    href="wwwroot/lib/bpmn-js/dist/assets/bpmn-js-properties-panel/assets/element-templates.css">
+  <link rel="stylesheet"
+    href="wwwroot/lib/bpmn-js/dist/assets/bpmn-js-properties-panel/assets/properties-panel.css">
+
+  <style type="text/css">
+    html,
+    body,
+    #canvas {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+    }
+
+    #save-button {
+      border: solid 3px green;
+    }
+
+    #js-properties-panel {
+      width: 400px;
+    }
+  </style>
+</head>
+<!-- element to draw bpmn diagram in -->
+<div style="display: flex;">
+  <div id="canvas" style="border: 2px solid black;"></div>
+  <div class="properties-panel-parent" id="js-properties-panel"></div>
+</div>
+
+<button id="save-button">Save Diagram</button>
+
+<!-- bpmn-js  -->
+<script src="wwwroot/lib/bpmn-js/dist/bpmn-js-properties-panel.js"></script>
+<script src="wwwroot/lib/bpmn-js/dist/bpmn-modeler.js"></script>
+<script src="wwwroot/lib/jquery/dist/jquery.min.js"></script>
+<script src="wwwroot/lib/bpmn-js/dist/bpmn2.js"></script>
+
+<!-- application -->
+<script src="wwwroot/js/modeler.js"></script>
